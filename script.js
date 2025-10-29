@@ -1,51 +1,39 @@
 //complete this code
+//complete this code
 class Person {
-	constructor(name:string,age:number){
+	constructor(name,age){
+	this.name  = name;
+		this.age = age;
+	}
 		getName(){
-return this.name;
+console.log(this.name);
 		}
 		setAge(age){
 			this.age = age
 		}
-		study(){
-			console.log(`${this.name} is studying`);
-		}
-		teach(){class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  getName() {
-    console.log( this.name);
-  }
-  setAge(age) {
-    this.age = age;
-    console.log(this.age)
-  }
-  study() {
-    console.log(`${this.name} is studying`);
-  }
-}
-class Student extends Person {
-  study() {
-    console.log(`${this.name} is studying`);
-  }
-}
-class Teacher extends Person {
-  teach() {
-    console.log(`${this.name} is teaching`);
-  }
-}
-
-
-console.log(`${this.name} is teaching`)
-		}
+		
+	
 	}
 }
 
-class Student extends Person {}
+class Student extends Person {
+	study(){
+			console.log(`${this.name} is studying`);
+		}
+}
 
-class Teacher extends Person {}
+class Teacher extends Person {
+		teach(){
+console.log(`${this.name} is teaching`)
+		}
+}
+let person = new Person(:"John",25);
+person.getName();
+person.setAge(30);
+person.study();
+person.teach();
+
+
 
 // Do not change the code below this line
 window.Person = Person;
