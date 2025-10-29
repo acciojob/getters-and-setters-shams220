@@ -1,23 +1,23 @@
 class Person {
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    this._name = name;
+    this._age = age;
   }
 
   get name() {
-    return this.name;
+    return this._name;
   }
 
   set name(newName) {
-    this.name = newName;
+    this._name = newName;
   }
 
   get age() {
-    return this.age;
+    return this._age;
   }
 
   set age(newAge) {
-    this.age = newAge;
+    this._age = newAge;
   }
 }
 
@@ -33,17 +33,6 @@ class Teacher extends Person {
   }
 }
 
-// Example usage (not needed for tests)
-let person = new Person("John", 25);
-person.age = 30;
-
-let student = new Student("John", 30);
-student.study();
-
-let teacher = new Teacher("John", 30);
-teacher.teach();
-
-// Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
