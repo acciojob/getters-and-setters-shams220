@@ -27,12 +27,15 @@ class Teacher extends Person {
 console.log(`${this.name} is teaching`)
 		}
 }
-let person = new Person(:"John",25);
+let person = new Person("John",25);
 person.getName();
 person.setAge(30);
-person.study();
-person.teach();
 
+let student = new Student("John", 30);
+student.study();
+
+let teacher = new Teacher("John", 30);
+teacher.teach();
 
 
 // Do not change the code below this line
