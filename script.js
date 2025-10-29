@@ -1,5 +1,5 @@
 //complete this code
-//complete this code
+
 class Person {
 	constructor(name,age){
 	this.name  = name;
@@ -14,7 +14,7 @@ console.log(this.name);
 		
 	
 	}
-}
+
 
 class Student extends Person {
 	study(){
